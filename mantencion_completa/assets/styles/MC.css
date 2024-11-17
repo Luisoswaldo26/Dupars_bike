@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 9fr 1fr;
+    grid-template-areas: 
+        'title1 title1'
+        'navbar navbar'
+        'container container'
+        'footer footer'
+    ;
+    background:
+    url(../img/Logo.listo.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.title1 {
+    width: 100%;;
+    grid-area: title1;
+    text-align: center;
+    text-transform: capitalize;
+    color: aliceblue;
+    background-color: rgba(27, 2, 2, 0.897);
+    font-size: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: nicolas;
+    border: 3px outset rgb(130, 132, 133);
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    
+}
+
+.navbar {
+        grid-area: navbar;
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background-color: rgba(255, 115, 0, 0.637);
+        text-align: center;
+        color: aliceblue;
+}
+
+
+.btn {
+    border-radius: 20px;
+}
+.container {
+    grid-area: container;
+}
+.imagen-1 img {
+    display: flex;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 90px;
+    box-shadow: 2px 2px 8px 0 rgb(221, 102, 102), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(236, 139, 82)
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(156, 20, 20);
+    width: 100%;
+    height: 70px;
+    bottom: 0;   
+}
